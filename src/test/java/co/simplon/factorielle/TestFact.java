@@ -1,22 +1,54 @@
 package co.simplon.factorielle;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.Assert.*;
+
+import org.junit.*;
 
 public class TestFact {
 
-	@SuppressWarnings("deprecation")
+	Factorielle f;
+	long res;
+	
+	@Before
+	public void initFact() {
+		f = new Factorielle();
+	}
+
 	@Test
 	public void test1() {
 		// GIVEN
-		Factorielle fact = new Factorielle();
-		long res;
+//		Factorielle f = new Factorielle();
 
 		// WHEN
-		res = fact.calculer(1);
+		res = f.calculer(1);
 		
 		// THEN
-		Assert.assertEquals(1, res);
+		assertEquals("Résultat incorrect pour la valeur 1", 1, res);
+	}
+
+	@Ignore
+	@Test
+	public void test0() {
+		// GIVEN
+//		Factorielle f = new Factorielle();
+
+		// WHEN
+		res = f.calculer(0);
+		
+		// THENs
+		assertEquals(1, res);
+	}
+
+	@Test
+	public void test10() {
+		// GIVEN
+//		Factorielle f = new Factorielle();
+
+		// WHEN
+		res = f.calculer(10);
+		
+		// THEN
+		assertTrue(/*"Résultat incorrect pour la valeur 10", */ res == 3628800);
 	}
 
 }
