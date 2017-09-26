@@ -51,4 +51,30 @@ public class TestFact {
 		assertTrue(/*"Résultat incorrect pour la valeur 10", */ res == 3628800);
 	}
 
+	@Test (expected=IllegalArgumentException.class)
+	public void testmoins1() {
+		// GIVEN
+//		Factorielle f = new Factorielle();
+
+		// WHEN
+		res = f.calculer(-1);
+		
+		// THEN
+//		assertEquals("Résultat incorrect pour la valeur 1", 1, res);
+	}
+
+	@Test (timeout=1)
+	public void testtimeout() {
+		// GIVEN
+//		for (int i = 0 ; i < 100000 ; i++) {
+		for (int i = 0 ; i < 100 ; i++) {
+
+		// WHEN
+			res = f.calculer(18);
+		}
+		
+		// THEN
+//		assertEquals("Résultat incorrect pour la valeur 1", 1, res);
+	}
+
 }
