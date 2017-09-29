@@ -79,7 +79,7 @@ public class TestFact {
 	public void testtimeout() {
 		// GIVEN
 //		for (int i = 0 ; i < 100000 ; i++) {
-		for (int i = 0 ; i < 10 ; i++) {
+		for (int i = 0 ; i < 5 ; i++) {
 
 		// WHEN
 			res = f.calculer(18);
