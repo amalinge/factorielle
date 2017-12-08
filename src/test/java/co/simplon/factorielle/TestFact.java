@@ -75,7 +75,6 @@ public class TestFact {
 //		assertEquals("Résultat incorrect pour la valeur 1", 1, res);
 	}
 
-	@Ignore
 	@Test (timeout=10)
 	public void testtimeout() {
 		// GIVEN
